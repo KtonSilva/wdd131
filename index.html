@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Kleyton L Silva</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Kleyton L Silva - A webpage layout example for dynamic web fundamentals course.">
+    <meta name="author" content="Kleyton L Silva">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Kleyton</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Kleyton L Silva</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/kleyton-l-silva-143280305/">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng#p7">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <div class="card">
+                <div class="card-header">About Me</div>
+                <div class="about-me-content">
+                    <div class="about-me-text">
+                        <p>My name is Kleyton L Silva. I was born in Brazil and live with my family in Recife-PE. I am currently working as a Web Designer. I love to travel and learn new things.</p>
+                    </div>
+                    <div class="about-me-image">
+                        <img src="images/profile.png" alt="Photo of Kleyton L Silva">
+                    </div>
+                </div>
+                <h2>Recife-PE</h2>
+                <p>Recife-PE is Recife is a Brazilian municipality, capital of the state of Pernambuco, located in the Northeast Region of the country. With a territorial area of ​​approximately 218 km², it is formed by an alluvial plain, with islands, peninsulas and mangroves as its main features.</p>
+                <img src="images/recife.jpg" alt="Photo of Recife - PE">
+            </div>
+        </section>
+        <section class="resources">
+            <div class="card">
+                <div class="card-header">Web Dev Resources</div>
+                <ul>
+                    <li><a href="https://dev.to/">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+                    <li><a href="https://loremipsum.io/">Lorem Ipsum Image Placeholder</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Kleyton L Silva, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
