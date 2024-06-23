@@ -1,0 +1,44 @@
+/* For screens 600px and up */
+@media screen and (min-width: 600px) {
+	header {
+		display: flex;
+		align-items: center;
+	justify-content: space-between;
+	}
+	
+	nav {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For screens 900px and up */
+@media screen and (min-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+header {
+    flex-direction: row;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+.gallery {
+    gap: 20px; /* Adjust gap for larger screens if needed */
+    margin: 0 20px; /* Add margins to the left and right */
+}
