@@ -17,7 +17,11 @@
     </header>
     <main>
         <section class="hero">
-            <img src="images/madagascar-hero.webp" alt="Madagascar Image" class="large-image">
+            <picture>
+                <source srcset="images/madagascar-hero-small.webp" media="(max-width: 767px)">
+                <source srcset="images/madagascar-hero-large.webp" media="(min-width: 768px)">
+                <img src="images/madagascar-hero-large.webp" alt="Madagascar Image" class="large-image">
+            </picture>
             <div class="data">
                 <h2>Data</h2>
                 <ul>
@@ -32,7 +36,8 @@
                 </ul>
             </div>
             <div class="weather">
-                <h2>Weather ⛅</h2>
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg">
                 <ul>
                     <li><strong>Temperature:</strong> 10°C</li>
                     <li><strong>Conditions:</strong> Partly Cloudy</li>
