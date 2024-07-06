@@ -161,3 +161,10 @@ footer p {
     font-weight: 900;
     font-style: italic;
   }  
+
+  .weather-icon {
+    width: 50px; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Center the icon and add some space below it */
+}
