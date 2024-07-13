@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/stylesform.css">
+</head>
+<body>
+    <header>
+        <h1>Review Submitted</h1>
+    </header>
+
+    <main>
+        <p>Thank you for your review!</p>
+        <p>You have submitted <span id="reviewCount"></span> reviews.</p>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Your Name, Country</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const reviewCount = localStorage.getItem("reviewCount");
+            document.getElementById("reviewCount").textContent = reviewCount;
+
+            const today = new Date();
+            document.getElementById('currentyear').textContent = today.getFullYear();
+            document.getElementById('lastModified').textContent = `Last Modification: ${document.lastModified}`;
+        });
+    </script>
+</body>
+</html>
